@@ -29,7 +29,7 @@ public class Bomb : MonoBehaviour
 
     private IEnumerator CreateExplosions(Vector3 dir)
     {
-        for (int i = 1; i < 66; i++)
+        for (int i = 1; i < 5; i++)
         {
             RaycastHit hit;
             Physics.Raycast(transform.position + new Vector3(0, .5f, 0), dir, out hit, 1, levelMask);
